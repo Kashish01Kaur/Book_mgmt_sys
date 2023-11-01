@@ -1,0 +1,12 @@
+<li class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="ms-2 me-auto">
+    <div class="fw-bold">{{item?.title}}</div>
+    Rs.{{item?.price?.value}}
+    Quantity: {{quantity}}
+  </div>
+  <button class="btn btn-info" (click)="item && decreaseQuantity(item)">-</button>
+  <button class="btn btn-info" (click)="removeProduct(item?.ISBN!)">X</button>
+  <button class="btn btn-info" (click)="item && increaseQuantity(item)">+</button>
+  
+  
+</li>
